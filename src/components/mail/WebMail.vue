@@ -1,12 +1,12 @@
 <template>
-  <div class="tutu">
-    <h2>UTUTUfsfdsd</h2>
+  <div class="webmail">
+    <h2>webmail</h2>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'Tutu',
+  name: 'webmail',
   data () {
     return {
     }

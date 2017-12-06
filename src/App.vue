@@ -1,15 +1,6 @@
 <template>
   <div id="app">
 
-    <nav class="navbar" role="navigation" aria-label="dropdown navigation">
-      <div class="container">
-        <router-link to="/" class="navbar-item">
-          <p class="title is-4">CPNV</p>
-        </router-link>
-      </div>
-
-    </nav>
-
     <section class="hero is-primary">
       <div class="hero-body">
         <div class="container">

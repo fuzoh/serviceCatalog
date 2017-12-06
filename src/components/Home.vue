@@ -4,19 +4,19 @@
       <div class="tile is-vertical is-8">
         <div class="tile">
           <div class="tile is-parent is-vertical">
-            <article v-on:click="click('mails/exchange')" class="tile is-child notification is-info">
+            <article v-on:click="click('mails/outlook')" class="tile is-child notification is-info">
               <h1 class="title">Messagerie</h1>
               <h2 class="subtitle">Mail, listes de diffusion</h2>
               <p>Comment utiliser les outils de messagerie, configurer une application avec votre compte de l'école.</p>
             </article>
-            <article class="tile is-child notification is-warning">
+            <article v-on:click="click('network/sharedfolders')" class="tile is-child notification is-warning">
               <h1 class="title">Ressources réseau</h1>
               <h2 class="subtitle">Accés local et a distance</h2>
               <p>Comment accéder au ressources depuis les machine de l'école, ou depuis des machines externes.</p>
             </article>
           </div>
           <div class="tile is-parent">
-            <article class="tile is-child notification is-success">
+            <article v-on:click="click('printers/drivers')" class="tile is-child notification is-success">
               <h1 class="title">Impression</h1>
               <h2 class="subtitle">Ajout et configuration</h2>
               <p>Comment accéder aux imprimentes du réseau, configurer les drivers, accés depuis une machine externe au réseau.</p>
@@ -24,14 +24,14 @@
           </div>
         </div>
         <div class="tile is-parent">
-          <article class="tile is-child box">
+          <article v-on:click="click('web/intranet')" class="tile is-child box">
             <h1 class="title">Services WEB</h1>
             <h2 class="subtitle">Intranet, support</h2>
           </article>
         </div>
       </div>
       <div class="tile is-parent">
-        <article class="tile is-child box">
+        <article v-on:click="click('authentication/local')" class="tile is-child box">
           <h1 class="title">Authentification</h1>
           <h2 class="subtitle">Identifients, mot de passe</h2>
         </article>

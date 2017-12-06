@@ -2,8 +2,9 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Home from '@/components/Home'
 import Mails from '@/components/Mails'
-import Exchange from '@/components/Exchange'
-import Tutu from '@/components/Tutu'
+import Outlook from '@/components/mail/Outlook'
+import WebMail from '@/components/mail/WebMail'
+import App from '@/components/mail/App'
 
 Vue.use(Router)
 
@@ -21,16 +22,25 @@ export default new Router({
       component: Mails,
       children: [
         {
-          path: 'exchange',
-          name: 'Exchange',
-          component: Exchange
+          path: 'outlook',
+          name: 'Outlook',
+          component: Outlook
         },
         {
-          path: 'tutu',
-          name: 'Tutu',
-          component: Tutu
+          path: 'webmail',
+          name: 'WebMail',
+          component: WebMail
+        },
+        {
+          path: 'app',
+          name: 'App',
+          component: App
         }
       ]
+    },
+    {
+      path: '*',
+      redirect: '/'
     }
   ],
   scrollBehavior (to, from, savedPosition) {
@@ -39,5 +49,6 @@ export default new Router({
     } else {
       return { x: 0, y: 0 }
     }
-  }
+  },
+  linkActiveClass: 'is-active'
 })

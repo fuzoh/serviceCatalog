@@ -4,10 +4,10 @@
       <div class="hero-body">
         <div class="container">
           <h1 class="title">
-            Mails
+            <router-link to="/"><b-icon icon="home" size="is-medium"></b-icon></router-link> Mails
           </h1>
           <h2 class="subtitle">
-            Centre Profesionnel du Nord Vaudois
+            Mail, listes de diffusion
           </h2>
         </div>
       </div>
@@ -15,10 +15,15 @@
         <div class="container">
           <div class="tabs is-boxed is-medium">
             <ul>
-              <li class="is-active"><router-link to="exchange">Exchange</router-link></li>
-              <li><router-link to="tutu">Tutu</router-link></li>
-              <li><a>Videos</a></li>
-              <li><a>Documents</a></li>
+              <router-link tag="li" to="outlook">
+                <a>Outlook</a>
+              </router-link>
+              <router-link tag="li" to="webmail">
+                <a>WebMail</a>
+              </router-link>
+              <router-link tag="li" to="app">
+                <a>Configure app</a>
+              </router-link>
             </ul>
           </div>
         </div>

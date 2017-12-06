@@ -1,12 +1,12 @@
 <template>
-  <div class="exchange">
-    <h2>UTUTU</h2>
+  <div class="app">
+    <h2>app</h2>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'Exchange',
+  name: 'app',
   data () {
     return {
     }
