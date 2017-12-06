@@ -47,4 +47,8 @@ body {
   height: 100%;
 }
 
+.my-container {
+  margin: 40px auto;
+}
+
 </style>

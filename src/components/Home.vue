@@ -62,9 +62,6 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
-.my-container {
-  margin: 40px auto;
-}
 
 article:hover {
   cursor: pointer;
