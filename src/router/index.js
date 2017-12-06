@@ -30,12 +30,12 @@ export default new Router({
   mode: 'history',
   routes: [
     {
-      path: '/serviceCatalog',
+      path: '/',
       name: 'Home',
       component: Home
     },
     {
-      path: '/serviceCatalog/mails',
+      path: '/mails',
       name: 'Mails',
       component: Mails,
       children: [
@@ -57,7 +57,7 @@ export default new Router({
       ]
     },
     {
-      path: '/serviceCatalog/network',
+      path: '/network',
       name: 'Network',
       component: Network,
       children: [
@@ -79,7 +79,7 @@ export default new Router({
       ]
     },
     {
-      path: '/serviceCatalog/printers',
+      path: '/printers',
       name: 'Printers',
       component: Printers,
       children: [
@@ -96,7 +96,7 @@ export default new Router({
       ]
     },
     {
-      path: '/serviceCatalog/authentication',
+      path: '/authentication',
       name: 'Authentication',
       component: Authentication,
       children: [
@@ -108,7 +108,7 @@ export default new Router({
       ]
     },
     {
-      path: '/serviceCatalog/web',
+      path: '/web',
       name: 'Web',
       component: Web,
       children: [
@@ -126,7 +126,7 @@ export default new Router({
     },
     {
       path: '*',
-      redirect: '/serviceCatalog'
+      redirect: '/'
     }
   ],
   scrollBehavior (to, from, savedPosition) {
