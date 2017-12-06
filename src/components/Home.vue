@@ -1,11 +1,11 @@
 <template>
-  <div class="container">
+  <div class="container my-container">
     <div class="tile is-ancestor">
       <div class="tile is-vertical is-8">
         <div class="tile">
           <div class="tile is-parent is-vertical">
             <article v-on:click="click('mails/outlook')" class="tile is-child notification is-info">
-              <h1 class="title">Messagerie</h1>
+              <h1 class="title">Messagrie</h1>
               <h2 class="subtitle">Mail, listes de diffusion</h2>
               <p>Comment utiliser les outils de messagerie, configurer une application avec votre compte de l'école.</p>
             </article>
@@ -24,7 +24,7 @@
           </div>
         </div>
         <div class="tile is-parent">
-          <article v-on:click="click('web/intranet')" class="tile is-child notification is-primary">
+          <article v-on:click="click('web/intranet')" class="tile is-child notification is-info">
             <h1 class="title">Services WEB</h1>
             <h2 class="subtitle">Intranet, accés a internet</h2>
             <p>Intranet, quels identifiants utiliser, comment utiliser les applications. Gestion des accés internet aux classes.</p>
@@ -32,7 +32,7 @@
         </div>
       </div>
       <div class="tile is-parent">
-        <article v-on:click="click('authentication/password')" class="tile is-child notification is-link">
+        <article v-on:click="click('authentication/password')" class="tile is-child notification is-warning">
           <h1 class="title">Authentification</h1>
           <h2 class="subtitle">Identifients, mot de passe</h2>
           <p>Comment obtenir ses identifiants, restaurer un mot de passe oublié.
@@ -61,8 +61,8 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-.container {
+<style>
+.my-container {
   margin: 40px auto;
 }
 

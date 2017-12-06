@@ -1,6 +1,6 @@
 <template>
   <div class="printers">
-    <section class="hero is-success">
+    <section class="hero is-warning">
       <div class="hero-body">
         <div class="container">
           <h1 class="title">
@@ -24,11 +24,11 @@
       </div>
     </section>
 
-    <section class="container">
+    <div class="container my-container">
       <transition name="fade" mode="out-in">
         <router-view></router-view>
       </transition>
-    </section>
+    </div>
 
   </div>
 </template>

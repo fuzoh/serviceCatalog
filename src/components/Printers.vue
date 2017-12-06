@@ -27,11 +27,11 @@
       </div>
     </section>
 
-    <section class="container">
+    <div class="container my-container">
       <transition name="fade" mode="out-in">
         <router-view></router-view>
       </transition>
-    </section>
+    </div>
 
   </div>
 </template>
