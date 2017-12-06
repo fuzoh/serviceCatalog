@@ -48,7 +48,7 @@ body {
 }
 
 .my-container {
-  margin: 40px auto;
+  margin: 40px auto !important;
 }
 
 </style>
