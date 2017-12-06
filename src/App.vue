@@ -5,7 +5,7 @@
       <div class="hero-body">
         <div class="container">
           <router-link to="/"><h1 class="title">
-            Catalogue de services
+            <b-icon icon="home" size="is-medium"></b-icon> Catalogue de services
           </h1></router-link>
           <h2 class="subtitle">
             Centre Profesionnel du Nord Vaudois

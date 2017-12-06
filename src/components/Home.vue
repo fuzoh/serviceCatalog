@@ -24,16 +24,20 @@
           </div>
         </div>
         <div class="tile is-parent">
-          <article v-on:click="click('web/intranet')" class="tile is-child box">
+          <article v-on:click="click('web/intranet')" class="tile is-child notification is-primary">
             <h1 class="title">Services WEB</h1>
-            <h2 class="subtitle">Intranet, support</h2>
+            <h2 class="subtitle">Intranet, accés a internet</h2>
+            <p>Intranet, quels identifiants utiliser, comment utiliser les applications. Gestion des accés internet aux classes.</p>
           </article>
         </div>
       </div>
       <div class="tile is-parent">
-        <article v-on:click="click('authentication/local')" class="tile is-child box">
+        <article v-on:click="click('authentication/password')" class="tile is-child notification is-link">
           <h1 class="title">Authentification</h1>
           <h2 class="subtitle">Identifients, mot de passe</h2>
+          <p>Comment obtenir ses identifiants, restaurer un mot de passe oublié.
+            Quels sont les droits des différents types de profils dans le domaine du cpnv.
+          </p>
         </article>
       </div>
     </div>

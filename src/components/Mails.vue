@@ -4,7 +4,7 @@
       <div class="hero-body">
         <div class="container">
           <h1 class="title">
-            <router-link to="/"><b-icon icon="home" size="is-medium"></b-icon></router-link> Mails
+            Mails
           </h1>
           <h2 class="subtitle">
             Mail, listes de diffusion

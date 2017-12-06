@@ -1,13 +1,13 @@
 <template>
-  <div class="network">
-    <section class="hero is-warning">
+  <div class="web">
+    <section class="hero is-success">
       <div class="hero-body">
         <div class="container">
           <h1 class="title">
-            Ressources réseau
+            Services WEB
           </h1>
           <h2 class="subtitle">
-            Accés local et a distance
+            Intranet, accés a internet
           </h2>
         </div>
       </div>
@@ -15,14 +15,11 @@
         <div class="container">
           <div class="tabs is-boxed is-medium">
             <ul>
-              <router-link tag="li" to="sharedfolders">
-                <a>Doosier partagés</a>
+              <router-link tag="li" to="intranet">
+                <a>Intranet</a>
               </router-link>
-              <router-link tag="li" to="datacpnv">
-                <a>data.cpnv.ch</a>
-              </router-link>
-              <router-link tag="li" to="smb">
-                <a>Accés SMB</a>
+              <router-link tag="li" to="webaccess">
+                <a>Accés a internet</a>
               </router-link>
             </ul>
           </div>
@@ -41,7 +38,7 @@
 
 <script>
 export default {
-  name: 'Network',
+  name: 'web',
   data () {
     return {
       activeTab: 0
