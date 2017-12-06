@@ -15,8 +15,8 @@
         <div class="container">
           <div class="tabs is-boxed is-medium">
             <ul>
-              <li class="is-active"><a>Pictures</a></li>
-              <li><a>Music</a></li>
+              <li class="is-active"><router-link to="exchange">Exchange</router-link></li>
+              <li><router-link to="tutu">Tutu</router-link></li>
               <li><a>Videos</a></li>
               <li><a>Documents</a></li>
             </ul>
@@ -26,7 +26,9 @@
     </section>
 
     <section class="container">
-      
+      <transition name="fade" mode="out-in">
+        <router-view></router-view>
+      </transition>
     </section>
 
   </div>

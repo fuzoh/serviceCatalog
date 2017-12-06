@@ -4,19 +4,22 @@
       <div class="tile is-vertical is-8">
         <div class="tile">
           <div class="tile is-parent is-vertical">
-            <article v-on:click="click" class="tile is-child notification is-info">
-              <h1 class="title">Mails</h1>
-              <h2 class="subtitle">Hehe</h2>
+            <article v-on:click="click('mails/exchange')" class="tile is-child notification is-info">
+              <h1 class="title">Messagerie</h1>
+              <h2 class="subtitle">Mail, listes de diffusion</h2>
+              <p>Comment utiliser les outils de messagerie, configurer une application avec votre compte de l'école.</p>
             </article>
-            <article class="tile is-child box">
+            <article class="tile is-child notification is-warning">
               <h1 class="title">Ressources réseau</h1>
-              <h2 class="subtitle">Hehe</h2>
+              <h2 class="subtitle">Accés local et a distance</h2>
+              <p>Comment accéder au ressources depuis les machine de l'école, ou depuis des machines externes.</p>
             </article>
           </div>
           <div class="tile is-parent">
-            <article class="tile is-child box">
+            <article class="tile is-child notification is-success">
               <h1 class="title">Impression</h1>
-              <h2 class="subtitle">Hehe</h2>
+              <h2 class="subtitle">Ajout et configuration</h2>
+              <p>Comment accéder aux imprimentes du réseau, configurer les drivers, accés depuis une machine externe au réseau.</p>
             </article>
           </div>
         </div>
@@ -46,8 +49,8 @@ export default {
     }
   },
   methods: {
-    click () {
-      alert('tutu')
+    click (link) {
+      this.$router.push('/' + link)
     }
   }
 }

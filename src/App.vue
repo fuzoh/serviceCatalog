@@ -4,7 +4,7 @@
     <nav class="navbar" role="navigation" aria-label="dropdown navigation">
       <div class="container">
         <router-link to="/" class="navbar-item">
-          <img src="https://bulma.io/images/bulma-logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28">
+          <p class="title is-4">CPNV</p>
         </router-link>
       </div>
 
@@ -23,7 +23,9 @@
       </div>
     </section>
 
-    <router-view/>
+    <transition name="fade" mode="out-in">
+      <router-view/>
+    </transition>
 
     <footer class="footer">
       <div class="container">
