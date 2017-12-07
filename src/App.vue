@@ -22,7 +22,7 @@
       <div class="container">
         <div class="content has-text-centered">
           <p>
-            <strong>Service Catalog</strong> by <a href="https://github.com/bastiennicoud">Bastien Nicoud</a>
+            <strong>Service Catalog</strong> by <a href="https://github.com/bastiennicoud/serviceCatalog">Bastien Nicoud</a>
           </p>
         </div>
       </div>

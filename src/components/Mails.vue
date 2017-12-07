@@ -22,7 +22,7 @@
                 <a>WebMail</a>
               </router-link>
               <router-link tag="li" to="app">
-                <a>Configure app</a>
+                <a>Configurer une app</a>
               </router-link>
             </ul>
           </div>
